@@ -20,7 +20,7 @@ module.exports = {
       },
 
       backgroundImage: {
-        'hero-mobile': "url('./assets/bg-header-mobile.png')",
+        'hero-mobile': "url('/assets/bg-header-mobile.png')",
       },
     },
   },

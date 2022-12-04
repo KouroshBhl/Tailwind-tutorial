@@ -6,6 +6,13 @@
   h2 {
     @apply text-4xl md:text-5xl text-center font-semibold text-darkGrayishBlue;
   }
+  h3 {
+    @apply text-2xl font-bold text-darkGrayishBlue text-center mb-2;
+  }
+
+  .main-paragraph {
+    @apply text-center text-gray-400 text-xl mb-4 md:max-w-2xl;
+  }
 
   .blue-btn {
     @apply text-white text-lg w-full bg-lightBlue py-4 rounded-full shadow-md hover:bg-lightBlue/90 transition-all;
