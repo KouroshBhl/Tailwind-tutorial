@@ -1,3 +1,16 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  h2 {
+    @apply text-4xl md:text-5xl text-center font-semibold text-darkGrayishBlue;
+  }
+
+  .blue-btn {
+    @apply text-white text-lg w-full bg-lightBlue py-4 rounded-full shadow-md hover:bg-lightBlue/90 transition-all;
+  }
+  .green-btn {
+    @apply text-white text-lg w-full bg-strongCyan py-4 rounded-full shadow-md hover:bg-strongCyan/90 transition-all;
+  }
+}

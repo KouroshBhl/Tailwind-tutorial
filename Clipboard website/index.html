@@ -5,10 +5,39 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- <link rel="stylesheet" href="./style.css" /> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&family=Nunito+Sans:wght@300;600;800&display=swap"
+      rel="stylesheet"
+    />
     <link href="./css/style.css" rel="stylesheet" />
     <title>Document</title>
   </head>
   <body>
-    <h1 class="text-2xl font-bold bg-slate-500">Hello world!</h1>
+    <!-- ! Global container -->
+    <div class="min-h-screen">
+      <!-- ! Inner Container -->
+      <div class="flex flex-col mx-auto relative w-full px-10">
+        <!-- ! Hero Section -->
+        <header
+          class="flex flex-col justify-center items-center py-14 md:py-28 pb-20 gap-8"
+        >
+          <figure class="md:mb-10">
+            <img src="./assets/logo.svg" alt="logo" />
+          </figure>
+          <h2>A history of everything you copy</h2>
+          <p class="text-center text-gray-400 text-2xl mb-4 md:max-w-2xl">
+            Clipboard allows you to track and organize everything you copy.
+            Instantly access your clipboard on all your devices.
+          </p>
+
+          <div class="flex flex-col w-full gap-4 md:flex-row md:max-w-xl">
+            <button class="green-btn">Download for IOS</button>
+            <button class="blue-btn">Download for Mac</button>
+          </div>
+        </header>
+      </div>
+    </div>
   </body>
 </html>
