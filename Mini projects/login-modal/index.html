@@ -21,104 +21,109 @@
     </script>
     <title>Login Modal</title>
   </head>
-  <body>
-    <!-- Global Container -->
-    <div class="flex items-center justify-center min-h-screen bg-rose-50">
-      <!-- Card Container -->
-      <div
-        class="relative flex flex-col m-6 space-y-10 bg-white shadow-2xl rounded-2xl md:flex-row md:space-y-0 md:m-0"
-      >
-        <!-- Left Side -->
-        <div class="p-6 md:p-20">
-          <!-- Top Content -->
-          <h2 class="font-mono mb-5 text-4xl font-bold">Log In</h2>
-          <p class="max-w-sm mb-12 font-sans font-light text-gray-600">
-            Log in to your account to upload or download pictures, videos or
-            music.
-          </p>
-          <input
-            type="text"
-            class="w-full p-6 border border-gray-300 rounded-md placeholder:font-sans placeholder:font-light"
-            placeholder="Enter your email address"
-          />
-
-          <!-- Middle Content -->
-          <div
-            class="flex flex-col items-center justify-between mt-6 space-y-6 md:flex-row md:space-y-0"
-          >
-            <div class="font-thin text-cyan-700">Forgot password</div>
-
-            <button
-              class="w-full md:w-auto flex justify-center items-center p-6 space-x-4 font-sans font-bold text-white rounded-md shadow-lg px-9 bg-cyan-700 shadow-cyan-100 hover:bg-opacity-90 shadow-sm hover:shadow-lg border transition hover:-translate-y-0.5 duration-150"
+  <body class="font-mono">
+    <!-- !Global container -->
+    <div class="bg-orange-100 flex items-center justify-center min-h-screen">
+      <div class="flex items-center justify-center h-[700px] lg:relative">
+        <!-- !CARD -->
+        <main
+          class="bg-white flex flex-col gap-8 shadow-lg lg:w-9/12 w-11/12 px-6 py-4 lg:py-10 lg:px-14 rounded-xl lg:rounded-r-none h-full"
+        >
+          <!-- !Heading container -->
+          <div class="flex justify-between items-center w-full">
+            <h2 class="text-3xl font-bold">Log In</h2>
+            <!-- !CLose Button-->
+            <div
+              class="flex items-center justify-center relative cursor-pointer lg:absolute lg:right-10 lg:top-5"
             >
-              <span>Next</span>
+              <div
+                class="rounded-full bg-gray-300 w-5 h-5 p-5 lg:bg-gray-100"
+              ></div>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                class="w-7"
+                fill="none"
                 viewBox="0 0 24 24"
                 stroke-width="1.5"
-                stroke="#ffffff"
-                fill="none"
-                stroke-linecap="round"
-                stroke-linejoin="round"
+                stroke="currentColor"
+                class="w-6 h-6 absolute"
               >
-                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                <line x1="5" y1="12" x2="19" y2="12" />
-                <line x1="13" y1="18" x2="19" y2="12" />
-                <line x1="13" y1="6" x2="19" y2="12" />
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M6 18L18 6M6 6l12 12"
+                />
               </svg>
-            </button>
+            </div>
           </div>
+          <section>
+            <p class="text-gray-400 font-sans">
+              Log in to your account to upload or download pictures, videos or
+              music.
+            </p>
+          </section>
 
-          <!-- Border -->
-          <div class="mt-12 border-b border-b-gray-300"></div>
+          <section class="flex flex-col justify-center items-center gap-5">
+            <input
+              type="text"
+              class="px-4 py-4 text-lg text-gray-400 w-full border-2 rounded-md mb-6"
+              placeholder="Enter your email address"
+            />
 
-          <!-- Bottom Content -->
-          <p class="py-6 text-sm font-thin text-center text-gray-400">
-            or log in with
-          </p>
+            <span class="text-cyan-700 font-sans">Forgot Password</span>
 
-          <!-- Bottom Buttons Container -->
-          <div
-            class="flex flex-col space-x-0 space-y-6 md:flex-row md:space-x-4 md:space-y-0"
-          >
-            <button
-              class="flex items-center justify-center py-2 space-x-3 border border-gray-300 rounded shadow-sm hover:bg-opacity-30 hover:shadow-lg hover:-translate-y-0.5 transition duration-150 md:w-1/2"
+            <div
+              class="w-full py-4 bg-cyan-700 group flex text-gray-100 items-center justify-center gap-4 font-sans rounded-lg cursor-pointer hover:shadow-xl hover:bg-cyan-600 hover:-translate-y-0.5 transition-all"
             >
-              <img src="images/facebook.png" alt="" class="w-9" />
-              <span class="font-thin">Facebook</span>
-            </button>
-            <button
-              class="flex items-center justify-center py-2 space-x-3 border border-gray-300 rounded shadow-sm hover:bg-opacity-30 hover:shadow-lg hover:-translate-y-0.5 transition duration-150 md:w-1/2"
+              <button class="text-xl">Next</button>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75"
+                />
+              </svg>
+            </div>
+
+            <!-- !Line -->
+            <div class="border-b-2 w-full my-8"></div>
+          </section>
+
+          <!-- !Login -->
+          <div class="flex flex-col gap-5">
+            <section
+              class="flex flex-col items-center justify-center font-sans gap-6"
             >
-              <img src="images/google.png" alt="" class="w-9" />
-              <span class="font-thin">Google</span>
-            </button>
+              <span class="text-gray-400 text-sm">or log in with</span>
+
+              <button
+                class="w-full bg-white border-2 rounded-md py-2 flex justify-center items-center gap-4 hover:-translate-y-0.5 hover:shadow-md transition-all"
+              >
+                <img src="./images/facebook.png" alt="facebook" class="h-9" />
+                Facebook
+              </button>
+            </section>
+            <section
+              class="flex flex-col items-center justify-center font-sans gap-6"
+            >
+              <button
+                class="w-full bg-white border-2 rounded-md py-2 flex justify-center items-center gap-4 hover:-translate-y-0.5 hover:shadow-md transition-all"
+              >
+                <img src="./images/google.png" alt="google" class="h-9" />
+                Google
+              </button>
+            </section>
           </div>
-        </div>
-
-        <!-- Right Side -->
-        <img src="images/image.jpg" alt="" class="w-[430px] hidden md:block" />
-
-        <!-- Close Button -->
-        <div
-          class="group absolute -top-5 right-4 flex items-center justify-center w-10 h-10 bg-gray-200 rounded-full md:bg-white md:top-4 hover:cursor-pointer hover:-translate-y-0.5 transition duration-150"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            class="w-6 h-6 text-black group-hover:text-gray-600"
-            viewBox="0 0 24 24"
-            stroke-width="1.5"
-            stroke="currentColor"
-            fill="none"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-          >
-            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-            <line x1="18" y1="6" x2="6" y2="18" />
-            <line x1="6" y1="6" x2="18" y2="18" />
-          </svg>
-        </div>
+        </main>
+        <figure class="hidden lg:block">
+          <img src="./images/image.jpg" alt="login" class="h-[700px]" />
+        </figure>
       </div>
     </div>
   </body>
