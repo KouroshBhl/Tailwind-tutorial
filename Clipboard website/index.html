@@ -20,11 +20,11 @@
       class="min-h-screen bg-hero-mobile md:bg-hero-desktop bg-no-repeat bg-contain"
     >
       <!-- ! Inner Container -->
-      <div class="flex flex-col mx-auto relative w-full px-10">
+      <div
+        class="flex flex-col mx-auto relative w-full px-10 gap-y-32 md:gap-y-60"
+      >
         <!-- ! Hero Section -->
-        <header
-          class="flex flex-col justify-center items-center py-14 md:py-28 pb-20 gap-8"
-        >
+        <header class="flex flex-col justify-center items-center pt-14 gap-8">
           <figure class="md:mb-10">
             <img src="./assets/logo.svg" alt="logo" />
           </figure>
@@ -41,7 +41,7 @@
         </header>
 
         <!-- ! First section -->
-        <section class="flex justify-center items-center flex-col gap-8">
+        <section class="sections">
           <h2>Keep track of your snippets</h2>
           <p class="main-paragraph leading-loose md:mb-8">
             Clipboard instantly stores any item you copy in the cloud, meaning
@@ -73,6 +73,16 @@
               </p>
             </article>
           </div>
+        </section>
+
+        <!-- !Second section -->
+        <section class="sections">
+          <h2>Access Clipboard Anywhere</h2>
+          <p class="main-paragraph mb-10">
+            Whether you’re on the go, or at your computer, you can access all
+            your Clipboard snippets in a few simple clicks.
+          </p>
+          <img src="./assets/image-devices.png" alt="" />
         </section>
       </div>
     </div>

@@ -11,7 +11,7 @@
   }
 
   .main-paragraph {
-    @apply text-center text-gray-400 text-xl mb-4 md:max-w-2xl;
+    @apply text-center text-gray-400 text-xl mb-4 md:max-w-2xl leading-relaxed;
   }
 
   .blue-btn {
@@ -19,5 +19,8 @@
   }
   .green-btn {
     @apply text-white text-lg w-full bg-strongCyan py-4 rounded-full shadow-md hover:bg-strongCyan/90 transition-all;
+  }
+  .sections {
+    @apply flex justify-center items-center flex-col gap-8;
   }
 }
