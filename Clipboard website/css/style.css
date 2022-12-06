@@ -1784,6 +1784,11 @@ h3 {
   background-color: rgb(255 0 0 / var(--tw-bg-opacity));
 }
 
+.bg-grayishBlue {
+  --tw-bg-opacity: 1;
+  background-color: hsl(201 11% 66% / var(--tw-bg-opacity));
+}
+
 .bg-hero-mobile {
   background-image: url('/assets/bg-header-mobile.png');
 }
