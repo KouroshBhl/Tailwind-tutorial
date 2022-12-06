@@ -16,7 +16,9 @@
   </head>
   <body>
     <!-- ! Global container -->
-    <div class="min-h-screen bg-hero-mobile bg-contain">
+    <div
+      class="min-h-screen bg-hero-mobile md:bg-hero-desktop bg-no-repeat bg-contain"
+    >
       <!-- ! Inner Container -->
       <div class="flex flex-col mx-auto relative w-full px-10">
         <!-- ! Hero Section -->
@@ -41,36 +43,36 @@
         <!-- ! First section -->
         <section class="flex justify-center items-center flex-col gap-8">
           <h2>Keep track of your snippets</h2>
-          <p class="main-paragraph">
+          <p class="main-paragraph leading-loose md:mb-8">
             Clipboard instantly stores any item you copy in the cloud, meaning
             you can access your snippets immediately on all your devices. Our
             Mac and iOS apps will help you organize everything.
           </p>
 
-          <img src="/assets/image-computer.png" alt="" srcset="" />
+          <div class="flex flex-col md:flex-row justify-center items-start">
+            <figure>
+              <img src="/assets/image-computer.png" alt="" srcset="" />
+            </figure>
 
-          <article">
-            <h3>Quick Search</h3>
-            <p class="main-paragraph">
-              Easily search your snippets by content, category, web address,
-              application, and more.
-            </p>
-          </article>
+            <article class="pt-20 md:py-14 md:pl-20">
+              <h3 class="md:text-left">Quick Search</h3>
+              <p class="main-paragraph mb-10 md:text-left">
+                Easily search your snippets by content, category, web address,
+                application, and more.
+              </p>
 
-          <article">
-            <h3>Icloud Sync</h3>
-            <p class="main-paragraph">
-              Instantly saves and syncs snippets across all your devices.
-            </p>
-          </article>
+              <h3 class="md:text-left">Icloud Sync</h3>
+              <p class="main-paragraph mb-10 md:text-left">
+                Instantly saves and syncs snippets across all your devices.
+              </p>
 
-          <article">
-            <h3>Completely History</h3>
-            <p class="main-paragraph">
-              Retrieve any snippets from the first moment you started using the
-              app.
-            </p>
-          </article>
+              <h3 class="md:text-left">Completely History</h3>
+              <p class="main-paragraph mb-10 md:text-left">
+                Retrieve any snippets from the first moment you started using
+                the app.
+              </p>
+            </article>
+          </div>
         </section>
       </div>
     </div>
